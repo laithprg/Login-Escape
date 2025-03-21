@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>login page</title>
+    <meta name="description" content="this is my first web" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/index.css"/>
+</head>
+<body>
+    <form class="form" onsubmit="check_password_email(event)">
+        <h1 class="h1">Login</h1>
+        <div class="div_email">
+            <label for="email" class="email_text">Email</label>
+            <br />
+            <input id="email" type="email" required autofocus placeholder="example@1"/>
+        </div>
+        <div class="div_password">
+            <label for="password" class="password_text">Password</label>
+            <br />
+            <input id="password" type="password" required placeholder="example"/>
+        </div>
+        <div class="div_check">
+            <input id="check" type="checkbox" />
+            <label class="check_text" for="check">Remember me</label>
+        </div>
+        <a class="link_forget" href="https://google.com">Forget password</a>
+        <div>
+            <input class="login" type="submit" value="Login" />
+        </div>
+        <div>
+            <p class="have">Dont have an acount? <a class="a" href="https://google.com">Register</a></p>
+        </div>
+    </form>
+    <script>
+        function check_password_email(event) {
+            event.preventDefault(); 
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            if (email === "example@1" && password === "example") {
+                window.location.href = "welcome.html";  
+            } else {
+                alert("Please enter your email and password correctly.");
+            }
+        }
+    </script>
+</body>
+</html>

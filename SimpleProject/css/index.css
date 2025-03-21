@@ -1,0 +1,125 @@
+body {
+    background-image: url(../3d08e03cb40252526fee2036a67f07f1.gif);
+    margin: 0px;
+}
+
+.button {
+    height: 80px;
+}
+
+.form {
+    text-align: center;
+    margin-left: 41%;
+    margin-right: 38%;
+    padding: 70px 0px;
+    margin-top: 5%;
+    max-height: 230px;
+    color: white;
+    position: relative;
+    top: 150px;
+    right: 40px;
+    background-color: rgb(0 0 0/50%);
+    border: 2px white solid;
+}
+
+.h1 {
+    text-shadow: 2px 0px 0.5px blue;
+    position: relative;
+    bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.email_text {
+    position: relative;
+    right: 78px;
+}
+
+
+.password_text {
+    position: relative;
+    right: 65px;
+}
+
+.div_email {
+    position: relative;
+    bottom: 45px;
+    right: 43px;
+}
+
+.div_password {
+    position: relative;
+    bottom: 35px;
+    right: 43px;
+}
+
+.div_check {
+    position: relative;
+    bottom: 12px;
+    right: 70px;
+}
+
+.link_forget {
+    position: relative;
+    bottom: 30px;
+    right: -80px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.login {
+    position: relative;
+    bottom: 20px;
+    background-color: rgb(255 255 255/0%);
+    width: 100px;
+    font-weight: bold;
+    color: white;
+    border-color: white;
+    width: 220px;
+    border-radius: 20px;
+    min-height: 25px;
+    cursor: pointer;
+}
+
+.have {
+    position: relative;
+    bottom: 10px;
+}
+
+.a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#email {
+    background-color: rgb(255 255 255/0%);
+    width: 265px;
+    position: relative;
+    right: -46px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    transition: border-bottom 0.2s ease-in;
+}
+
+    #email:focus {
+        border-bottom: 1px white solid;
+    }
+
+#password {
+    background-color: rgb(255 255 255/0%);
+    width: 265px;
+    position: relative;
+    right: -46px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    transition: border-bottom 0.2s ease-in;
+}
+
+    #password:focus {
+        border-bottom: 1px white solid;
+    }
