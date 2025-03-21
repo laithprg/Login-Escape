@@ -16,5 +16,4 @@ Hello! I am a beginner programmer, and I created this simple page using **HTML**
 
 ## Project Support:
 I hope you can support me, even if it's just a small amount, so I can continue my journey in programming. Thank you so much ❤️
-
-If you'd like to support me, you can help via **Buy Me A Coffee** or **GitHub Sponsorship**.
+If you'd like to support the project, you can donate via [PayPal](https://paypal.me/laith453l).
