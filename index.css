@@ -1,128 +1,108 @@
-body{
-        background-image: url("pngtree-animated-login-image_16607697.jpg");
-        background-size: cover;   
-        background-repeat: no-repeat; 
-        background-position: center;
-        margin: 0px;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("pngtree-animated-login-image_16607697.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button {
-    height: 80px;
-}
-
+/* --- Form Container --- */
 .form {
-    text-align: center;
-    margin-left: 41%;
-    margin-right: 38%;
-    padding: 70px 0px;
-    margin-top: 5%;
-    max-height: 230px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 50px;
+    border: 2px solid white;
+    border-radius: 15px;
     color: white;
-    position: relative;
-    top: 150px;
-    right: 40px;
-    background-color: rgb(0 0 0/50%);
-    border: 2px white solid;
+    text-align: center;
+    width: 350px;
+    box-sizing: border-box;
 }
 
-.h1 {
-    text-shadow: 2px 0px 0.5px blue;
-    position: relative;
-    bottom: 50px;
+/* --- Heading --- */
+.form h1 {
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px blue;
     letter-spacing: 2px;
 }
 
-.email_text {
-    position: relative;
-    right: 78px;
-}
-
-
-.password_text {
-    position: relative;
-    right: 65px;
-}
-
-.div_email {
-    position: relative;
-    bottom: 45px;
-    right: 43px;
-}
-
-.div_password {
-    position: relative;
-    bottom: 35px;
-    right: 43px;
-}
-
-.div_check {
-    position: relative;
-    bottom: 12px;
-    right: 70px;
-}
-
-.link_forget {
-    position: relative;
-    bottom: 30px;
-    right: -80px;
-    text-decoration: none;
-    color: white;
+/* --- Labels --- */
+.form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
+/* --- Input Fields --- */
+.form input[type="email"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    transition: border-bottom 0.3s ease;
+}
+
+.form input[type="email"]:focus,
+.form input[type="password"]:focus {
+    border-bottom: 2px solid #00f; /* highlight on focus */
+}
+
+/* --- Login Button --- */
 .login {
-    position: relative;
-    bottom: 20px;
-    background-color: rgb(255 255 255/0%);
-    width: 100px;
-    font-weight: bold;
-    color: white;
-    border-color: white;
-    width: 220px;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid white;
     border-radius: 20px;
-    min-height: 25px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.have {
-    position: relative;
-    bottom: 10px;
+.login:hover {
+    background-color: white;
+    color: black;
 }
 
-.a {
+/* --- Forget Password Link --- */
+.link_forget {
+    display: block;
+    margin-top: 10px;
     text-decoration: none;
     color: white;
     font-weight: bold;
+    text-align: right;
+    transition: color 0.3s ease;
 }
 
-#email {
-    background-color: rgb(255 255 255/0%);
-    width: 265px;
-    position: relative;
-    right: -46px;
+.link_forget:hover {
+    color: #00f;
+}
+
+/* --- Sign up Text --- */
+.have {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.have a {
     color: white;
     font-weight: bold;
-    border: none;
-    outline: none;
-    transition: border-bottom 0.2s ease-in;
+    text-decoration: none;
 }
 
-    #email:focus {
-        border-bottom: 1px white solid;
-    }
-
-#password {
-    background-color: rgb(255 255 255/0%);
-    width: 265px;
-    position: relative;
-    right: -46px;
-    color: white;
-    font-weight: bold;
-    border: none;
-    outline: none;
-    transition: border-bottom 0.2s ease-in;
+.have a:hover {
+    color: #00f;
 }
-
-    #password:focus {
-        border-bottom: 1px white solid;
-    }
