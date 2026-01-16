@@ -1,7 +1,9 @@
-body {
+body{
         background-image: url("pngtree-animated-login-image_16607697.jpg");
-
-    margin: 0px;
+        background-size: cover;   /* تغطي كل مساحة العنصر */
+        background-repeat: no-repeat; /* تمنع التكرار */
+        background-position: center;
+        margin: 0px;
 }
 
 .button {
